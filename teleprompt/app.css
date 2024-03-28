@@ -1,0 +1,220 @@
+body {
+    background-color: white;
+    font-family: Raleway, sans-serif;
+    overflow: hidden;
+}
+
+.btn-group {
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.toggles {
+    border-width: 2px;
+    border-radius: 0%;
+    
+    
+}
+
+#telepromptbtn{
+    border-right: None;
+    /* border-left: None; */
+    border-left-width: 2px;
+
+}
+
+#scriptbtn {
+    border-left: None;
+    border-right-width: 2px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2%;
+    color: grey;
+}
+
+#scriptarea {
+    height: 150%;
+    border-color: rgb(172, 172, 172);
+    border-width: 2px;
+
+}
+
+.telepromptarea {
+    margin-top: 3%;
+    /* height: 200px; */
+    border-color: rgb(172, 172, 172);
+    border-width: 2px;
+    height: 60vh;
+    position: relative;
+}
+
+.full-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left:0px;
+    z-index: 9999;
+    
+}
+
+#full-screen {
+   margin-left: 80%;
+   margin-top: 1%;
+   width: 20%;
+}
+
+/* #highlight-color{
+    margin-left: 1%;
+} */
+
+
+/* .form-control {
+    height: 150%;
+    border-color: rgb(172, 172, 172);
+    border-width: 2px; */
+
+    /* } */
+
+
+.vertical-line {
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 50px;
+    width: 1px;
+}
+
+/* .form-check-input {
+
+} */
+
+#timingtoggle {
+    margin-top: 2%;
+    background-color: white;
+    border-color: #f8f9fa;
+}
+
+/* #timingtoggle:active {
+    background-color: #f8f9fa;
+     */
+/* } */
+
+.btn-check:checked + .btn-outline-primary {
+    background-color:#cececf;
+    color: black;
+    border-color: black;
+}
+
+.btn-check:hover + .btn-outline-primary {
+    background-color:#cececf;
+    color: black;
+    border-color: black;
+}
+
+.btn-check + .btn-outline-primary {
+    border-color: #cececf;
+}
+
+
+#font-size {
+    padding-top: 5%;
+}
+
+#highlightBox {
+    margin-top: 0%;
+    padding-top: 0%;
+    height: 2.5em;
+    width:3em;
+}
+
+
+.countdown-bg {
+    /* Other styles... */
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);
+    background-size: 10px 10px;
+}
+
+/* center coundown div */
+.countdown {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* line-height: 0.1; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; */
+
+    /* make large countdown text with a red glow fade */
+    /* the text should get larger and smaller as it appears and disappears */
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 0 10px turquoise;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px turquoise;
+        font-size: 1px;
+    }
+    50% {
+        text-shadow: 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px turquoise;
+        font-size: 200px;
+    }
+    100% {
+        text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px turquoise;
+        font-size: 1px;
+    }
+}
+
+/* #telepromptarea {
+    user-select: none;
+} */
+
+#telepromptarea {
+    
+    overflow: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 200px; or any height you want */
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#telepromptarea:active,
+#telepromptarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(172, 172, 172) !important;
+}
+
+
+#start-stop-restart {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* .teleprompt {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+    line-height: 1.5;
+    overflow: auto;
+    height: 100vh;
+} */
+
+
