@@ -44,7 +44,7 @@ telepromptbtn.addEventListener('click', () => {
             <h1>TELEPROMPT</h1>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-sm-4 col-xs-4">
                 <div class="input-group">
                     <span class="input-group-text" id="wpm-span">WPM</span>
                     <input type="text" class="form-control" id="wpm-input" placeholder="Number" aria-label="words per minute" aria-describedby="basic-addon1">
@@ -53,7 +53,7 @@ telepromptbtn.addEventListener('click', () => {
            
            
         </div>
-        <div class="col-6">
+        <div class="col-sm-6 col-xs-4">
             <div id="font-size" class="input-group">
                 <span class="input-group-text" id="fontsize-span">Font Size</span>
                 <input type="text" class="form-control" id="fontSize-input" placeholder="Number" aria-label="Username" aria-describedby="basic-addon1">
