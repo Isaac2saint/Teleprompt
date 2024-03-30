@@ -206,6 +206,25 @@ h1 {
     left: 50%;
 }
 
+@media screen and (max-width: 600px){
+    #full-screen {
+        margin-left: 55%;
+        margin-top: -250%;
+        width: 40%;
+        height: fit-content;
+     }
+
+     .telepromptarea {
+        margin-top: 15%;
+        /* height: 200px; */
+        border: none;
+        /* border-width: 2px; */
+        height: 60vh;
+        position: relative;
+    }
+    
+}
+
 /* .teleprompt {
     background-color: black;
     color: white;
