@@ -50,20 +50,10 @@ telepromptbtn.addEventListener('click', () => {
                     <input type="text" class="form-control" id="wpm-input" placeholder="Number" aria-label="words per minute" aria-describedby="basic-addon1">
                 </div>
             </div>
-            <div id="highlight-color" class="col-4">
-                <div class="input-group">
-                    <span class="input-group-text" id="hc-span">Highlight-Colour</span>
-                    <input type="color" class="form-control form-control-color" id="highlightColorPicker" value="#563d7c" title="Choose your color">
-                </div>
-            </div>
-            <div id="highlightdiv" class="col-4">
-                <div class="input-group">
-                    <span class="input-group-text" id="highlight-span">Highlight</span>
-                    <input class="form-check-input" type="checkbox" value="" id="highlightBox">
-                </div>
-            </div>
+           
+           
         </div>
-        <div class="col-4">
+        <div class="col-6">
             <div id="font-size" class="input-group">
                 <span class="input-group-text" id="fontsize-span">Font Size</span>
                 <input type="text" class="form-control" id="fontSize-input" placeholder="Number" aria-label="Username" aria-describedby="basic-addon1">
@@ -72,14 +62,7 @@ telepromptbtn.addEventListener('click', () => {
 
         <div class="col-8">
             
-        <div id="timingtoggle" class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="evenlyradio" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="evenlyradio">Evenly Spaced</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="syllableradio" autocomplete="off">
-            <label class="btn btn-outline-primary" for="syllableradio">Syllable Adjustment</label>
-          
-        </div>
+       
     </div>
             <!-- <div cl
             ass="col-6">
@@ -100,6 +83,29 @@ telepromptbtn.addEventListener('click', () => {
 </div>
     </div>`;
     }
+
+//     <div id="highlight-color" class="col-4">
+//     <div class="input-group">
+//         <span class="input-group-text" id="hc-span">Highlight-Colour</span>
+//         <input type="color" class="form-control form-control-color" id="highlightColorPicker" value="#563d7c" title="Choose your color">
+//     </div>
+// </div>
+
+// {/* <div id="highlightdiv" class="col-4">
+// <div class="input-group">
+//     <span class="input-group-text" id="highlight-span">Highlight</span>
+//     <input class="form-check-input" type="checkbox" value="" id="highlightBox">
+// </div>
+// </div> */}
+
+// {/* <div id="timingtoggle" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+// <input type="radio" class="btn-check" name="btnradio" id="evenlyradio" autocomplete="off" checked>
+// <label class="btn btn-outline-primary" for="evenlyradio">Evenly Spaced</label>
+
+// <input type="radio" class="btn-check" name="btnradio" id="syllableradio" autocomplete="off">
+// <label class="btn btn-outline-primary" for="syllableradio">Syllable Adjustment</label>
+
+// </div> */}
 
     const telepromptarea = document.getElementById("telepromptarea");
 
@@ -145,48 +151,48 @@ telepromptbtn.addEventListener('click', () => {
 
     // set and update the highlight colour
 
-    highlightColorPicker = document.getElementById('highlightColorPicker');
-    highlightColorPicker.value = highlightColor;
-    highlightColorPicker.addEventListener('change', () => {
-        highlightColor = highlightColorPicker.value;
-        console.log(highlightColor);
-    }
-    )
+    // highlightColorPicker = document.getElementById('highlightColorPicker');
+    // highlightColorPicker.value = highlightColor;
+    // highlightColorPicker.addEventListener('change', () => {
+    //     highlightColor = highlightColorPicker.value;
+    //     console.log(highlightColor);
+    // }
+    // )
 
     // set and update the highlight toggle
-    highlightBox = document.getElementById('highlightBox');
-    highlightBox.checked = highlight;
-    highlightBox.addEventListener('change', () => {
-        highlight = highlightBox.checked;
-        console.log(highlight);
-    }
-    )
+    // highlightBox = document.getElementById('highlightBox');
+    // highlightBox.checked = highlight;
+    // highlightBox.addEventListener('change', () => {
+    //     highlight = highlightBox.checked;
+    //     console.log(highlight);
+    // }
+    // )
 
     // set and update the timing toggle
-    timingToggle = document.getElementById('timingtoggle');
-    if (timing == 'evenly') {
-        document.getElementById('evenlyradio').checked = true;
-    }
-    else {
-        document.getElementById('syllableradio').checked = true;
-    }
+    // timingToggle = document.getElementById('timingtoggle');
+    // if (timing == 'evenly') {
+    //     document.getElementById('evenlyradio').checked = true;
+    // }
+    // else {
+    //     document.getElementById('syllableradio').checked = true;
+    // }
 
-    timingToggle.addEventListener('change', () => {
-        if (document.getElementById('evenlyradio').checked) {
-            timing = 'evenly';
-            // document.getElementById('syllableradio').checked = false;
-        }
-        else {
-            timing = 'syllable';
-            // document.getElementById('syllableradio').checked = tr;
-            // document.getElementById('evenlyradio').checked = false;
-        }
-        console.log(timing);
+    // timingToggle.addEventListener('change', () => {
+    //     if (document.getElementById('evenlyradio').checked) {
+    //         timing = 'evenly';
+    //         // document.getElementById('syllableradio').checked = false;
+    //     }
+    //     else {
+    //         timing = 'syllable';
+    //         // document.getElementById('syllableradio').checked = tr;
+    //         // document.getElementById('evenlyradio').checked = false;
+    //     }
+    //     console.log(timing);
 
         
 
-    }
-    )
+    // }
+    // )
 
     fullScreenbtn = document.getElementById('full-screen');
     fullScreenbtn.addEventListener('click', () => {
